@@ -1,0 +1,19 @@
+body {
+  background-color: hsl(84, 100%, 70%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+}
+
+#searchbtn {
+  padding: 7px;
+  background-color: hsl(39, 100%, 70%);
+  border-radius: 7px;
+  border-width: 1px;
+}
+#search {
+  padding: 7px;
+  border-radius: 3px;
+  border-width: 1px;
+}
