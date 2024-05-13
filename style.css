@@ -1,9 +1,14 @@
 body {
-  background-color: hsl(84, 100%, 60%);
+  background-color: hsl(170, 100%, 60%);
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
+  font-family: sans-serif;
+}
+#pokemon {
+  background-color: white;
+  border-radius: 10px;
 }
 
 #searchbtn {
