@@ -1,8 +1,3 @@
-#info {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 @media (min-width: 480px) {
   body {
     background-color: #2d3748;
@@ -11,6 +6,13 @@
       sans-serif;
     color: rgb(255, 255, 255);
   }
+
+  #info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   #titleName {
     display: flex;
     justify-content: center;
@@ -91,6 +93,12 @@
     align-items: center;
   }
 
+  #info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+  }
   .alter-box {
     display: flex;
     flex-direction: column;
@@ -110,14 +118,17 @@
   }
 
   #searchbtn {
-    padding: 7px;
+    padding: 9px;
+    padding-left: 15px;
+    padding-right: 15px;
     background-color: hsla(0, 0%, 25%, 0.811);
     color: white;
     border-radius: 7px;
     border-width: 1px;
+    cursor: pointer;
   }
   #search {
-    padding: 7px;
+    padding: 9px;
     width: 200px;
     border-radius: 3px;
     border-width: 1px;
