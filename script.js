@@ -11,6 +11,7 @@ async function fetchData() {
     const pokehp = document.getElementById("poke-hp");
     const pokepPower = document.getElementById("poke-power");
     const pokeType = document.getElementById("poke-power-type");
+    const info = document.getElementById("info");
 
     const response = await fetch(
       `https://pokeapi.co/api/v2/pokemon/${searchElement.value.toLowerCase()}`
@@ -34,6 +35,7 @@ async function fetchData() {
       pokehp.style.display = "none";
       pokepPower.style.display = "none";
       pokeType.style.display = "none";
+      info.style.display = "none";
 
       throw new Error("we could not fetch this");
     }
@@ -72,6 +74,7 @@ async function fetchData() {
       pokehp.style.display = "block";
       pokepPower.style.display = "block";
       pokeType.style.display = "block";
+      info.style.display = "none";
     }
     // console.log(data);
   } catch (error) {
