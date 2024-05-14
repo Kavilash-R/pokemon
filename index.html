@@ -8,28 +8,39 @@
     <link rel="icon" href="./pokeball.jpg" type="image/x-icon" />
   </head>
   <body>
-    <center id="">
+    <div class="header-body">
       <h1 id="titleName">Search your Pokemon</h1>
-      <input
-        id="search"
-        type="text"
-        placeholder="type pokemon name or number"
-      />
-      <button id="searchbtn" onclick="fetchData()">Search</button>
-      <br />
-      <div id="box">
-        <h3 id="alter">invalid pokemon</h3>
-        <br />
-        <img src="" id="pokemon" />
-        <br />
-
-        <h3 id="poke-name"></h3>
-        <h3 id="poke-height"></h3>
-        <h3 id="poke-weight"></h3>
-        <h3 id="poke-hp"></h3>
-        <h3 id="poke-power"></h3>
+      <div id="search-area">
+        <input
+          id="search"
+          type="text"
+          placeholder="type pokemon name or number"
+        />
+        <button id="searchbtn" onclick="fetchData()">Search</button>
       </div>
-    </center>
+    </div>
+    <br />
+    <div class="alter-box">
+      <h3 id="alter">Invalid Pokemon Name</h3>
+      <h3 id="alter-number">Invalid Pokemon Number</h3>
+    </div>
+
+    <div id="box">
+      <br />
+      <br />
+      <div class="container">
+        <div class="left-container"><img src="" id="pokemon" /></div>
+        <br />
+        <div class="right-container">
+          <h3 id="poke-name"></h3>
+          <h3 id="poke-height"></h3>
+          <h3 id="poke-weight"></h3>
+          <h3 id="poke-power-type"></h3>
+          <h3 id="poke-power"></h3>
+          <h3 id="poke-hp"></h3>
+        </div>
+      </div>
+    </div>
 
     <script src="script.js"></script>
   </body>

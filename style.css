@@ -1,25 +1,92 @@
-body {
-  background-color: hsl(170, 100%, 60%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  font-family: sans-serif;
-}
-#pokemon {
-  background-color: white;
-  border-radius: 10px;
+@media (min-width: 480px) {
+  body {
+    background-color: hsl(179, 100%, 60%);
+    height: 100%;
+    font-family: sans-serif;
+  }
+  #titleName {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .alter-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #pokemon {
+    background-color: white;
+    border-radius: 10px;
+    height: 250px;
+    width: 250px;
+    padding: 10px;
+    display: none;
+  }
+  #search-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #searchbtn {
+    padding: 7px;
+    background-color: hsl(39, 100%, 70%);
+    border-radius: 7px;
+    border-width: 1px;
+    margin-left: 10px;
+  }
+  #search {
+    padding: 7px;
+    width: 200px;
+    border-radius: 3px;
+    border-width: 1px;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .left-container {
+    margin-right: 50px;
+  }
+  .right-container {
+    margin-left: 50px;
+  }
 }
 
-#searchbtn {
-  padding: 7px;
-  background-color: hsl(39, 100%, 70%);
-  border-radius: 7px;
-  border-width: 1px;
-}
-#search {
-  padding: 7px;
-  width: 200px;
-  border-radius: 3px;
-  border-width: 1px;
+@media (max-width: 480px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(179, 100%, 60%);
+    height: 100%;
+    font-family: sans-serif;
+  }
+
+  #pokemon {
+    background-color: white;
+    border-radius: 10px;
+    height: 150px;
+    width: 150px;
+    display: none;
+  }
+
+  #searchbtn {
+    padding: 7px;
+    background-color: hsl(39, 100%, 70%);
+    border-radius: 7px;
+    border-width: 1px;
+  }
+  #search {
+    padding: 7px;
+    width: 200px;
+    border-radius: 3px;
+    border-width: 1px;
+  }
 }
