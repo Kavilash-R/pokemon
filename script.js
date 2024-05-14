@@ -50,16 +50,15 @@ async function fetchData() {
     if (!pokeImage1) {
       pokeImg.src = pokeImage2;
     }
-    const poketypes = data.types.map((element) =>
-      element.type.name.toUpperCase()
-    );
+    const poketypes = data.types.map((element) => element.type.name);
 
     pokeName.textContent = `Name:  ${data.name.toUpperCase()}`;
     pokeHeight.textContent = `Height:  ${data.height / 10} meters `;
     pokeWeight.textContent = `Weight:  ${data.weight / 10} kgs`;
     pokehp.textContent = `HP:  ${data.stats[0].base_stat}`;
     pokepPower.textContent = `Power Level:  ${data.stats[1].base_stat}`;
-    pokeType.textContent = `Power Type:  ${poketypes}`;
+    pokeType.textContent = `Type: ${poketypes}`;
+    pokeType.style.overflow = "auto";
     // data.types[0].type.name
 
     if (!response.ok) {
