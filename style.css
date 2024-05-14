@@ -63,16 +63,29 @@
 
 @media (max-width: 480px) {
   body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     background-color: #28282b;
     height: 100%;
     font-family: sans-serif;
     color: white;
   }
-
+  .header-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .alter-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   #titleName {
     color: hsl(39, 100%, 70%);
   }

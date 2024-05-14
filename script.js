@@ -38,7 +38,7 @@ async function fetchData() {
       throw new Error("we could not fetch this");
     }
     const data = await response.json();
-    console.log(data);
+    // console.log(data);
 
     // for svg img (not every pokemon has a svg photo ) => const pokeImage = await data.sprites.other.dream_world.front_default;
 
@@ -74,7 +74,7 @@ async function fetchData() {
       pokepPower.style.display = "block";
       pokeType.style.display = "block";
     }
-    console.log(data);
+    // console.log(data);
   } catch (error) {
     console.error(error);
   }
