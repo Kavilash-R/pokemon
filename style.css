@@ -13,6 +13,12 @@
     align-items: center;
   }
 
+  #poke-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   #titleName {
     display: flex;
     justify-content: center;
@@ -53,7 +59,7 @@
   }
   #search {
     padding: 10px;
-    width: 200px;
+    width: 250px;
     border-radius: 3px;
     border-width: 1px;
     font-size: medium;
@@ -99,6 +105,14 @@
     align-items: center;
     padding-left: 20px;
   }
+
+  #poke-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+  }
+
   .alter-box {
     display: flex;
     flex-direction: column;
