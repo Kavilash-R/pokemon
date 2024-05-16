@@ -11,12 +11,14 @@
     <div class="header-body">
       <h1 id="titleName">Search your Pokémon</h1>
       <div id="search-area">
-        <input
-          id="search"
-          type="text"
-          placeholder="enter pokemon name or number"
-        />
-        <button id="searchbtn" onclick="fetchData()">Search</button>
+        <form onsubmit="fetchData(); return false;">
+          <input
+            id="search"
+            type="text"
+            placeholder="enter pokemon name or number"
+          />
+          <button id="searchbtn" type="submit">Search</button>
+        </form>
       </div>
     </div>
     <br />
